@@ -10,7 +10,6 @@ function App(props) {
   // const user = { age:20, name:"Sam"}
   const playerDataArray = preparePlayerData(playerData);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-  const onePlayer = parsedPlayerData[0];
   return (
     <div className="App">
         {/* <DemoComponent age = {20} name = {"Sam"} location = {"Vancouver"} />
@@ -18,7 +17,7 @@ function App(props) {
       <h1>
         Tourney Matches <span>Where Coding and Tournaments found their Match!</span>
       </h1>
-        <PlayerList onePlayer = {onePlayer} />
+        <PlayerList parsedPlayerData = {parsedPlayerData} />
         <MatchList matchData = {matchData} />
       
         {/* <MatchList age = {user.age} name = {user.name} />
